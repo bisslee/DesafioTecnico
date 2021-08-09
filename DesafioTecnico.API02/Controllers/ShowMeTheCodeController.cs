@@ -13,9 +13,13 @@ namespace DesafioTecnico.API02.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
-            return "";
+            var uri = new URL() { Uri= "https://github.com/bisslee/DesafioTecnico" };
+            return Ok(uri);
         }
+    }
 
-       
+    public class URL
+    {
+        public string Uri { get; set; }
     }
 }

@@ -18,10 +18,9 @@ namespace DesafioTecnico.API01.Controllers
         }
 
         [HttpGet]
-        public ActionResult<decimal> Get()
+        public ActionResult Get()
         {
-            decimal juro = 0.01m;
-            return Ok(juro);
+            return Ok("{ \"juro\": 0.01}");
         }
     }
 }
